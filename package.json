@@ -1,10 +1,11 @@
 {
   "name": "node-express-mongodb",
   "version": "1.0.0",
-  "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
-  "main": "server.js",
+  "description": "Creating the backend for a Fantasy Football app",
+  "main": "index.js",
   "scripts": {
     "test": "mocha ./src/tests/*.spec.js",
+    "test:watch": "mocha --watch ./src/tests/*.spec.js",
     "run": "nodemon server.js"
   },
   "keywords": [
@@ -18,6 +19,7 @@
   "author": "metabig",
   "license": "ISC",
   "dependencies": {
+    "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "mongoose": "^6.4.2"
